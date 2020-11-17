@@ -14,7 +14,7 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import java.util.UUID;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class HelloWorldListener {
 
@@ -36,7 +36,7 @@ public class HelloWorldListener {
                        @Headers MessageHeaders messageHeaders,
                        Message message) throws JMSException {
 
-        System.out.println("I got a message");
+
         System.out.println(helloWorldMessage);
         HelloWorldMessage replyMessage = HelloWorldMessage.builder().
                 id(UUID.randomUUID()).message("World").build();

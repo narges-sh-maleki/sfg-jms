@@ -67,7 +67,7 @@ public class HelloSender {
             }
         });
 
-        System.out.println("Message Sent");
+
         System.out.println(reply.getBody(String.class));
 
 
